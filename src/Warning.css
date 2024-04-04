@@ -1,0 +1,43 @@
+.warning {
+    font-size: 24px;
+    padding: 0.25em;
+    border: 2px solid #999;
+    
+    /* 2 animations: shake, and glow red */
+    animation-name: shake, glow-red;
+    animation-duration: 0.7s, 0.35s;
+    animation-iteration-count: 1, 2;
+    max-width: 580px;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    height: 55px;
+    border-radius: 5px;
+    display: grid;
+    padding: 0 0.4rem;
+    position: relative;
+    text-align: center;
+}
+  
+.warning-text {
+    color: #f86f03;
+}
+
+@keyframes shake {
+0%, 20%, 40%, 60%, 80% {
+    transform: translateX(8px);
+}
+10%,
+30%,
+50%,
+70%,
+90% {
+    transform: translateX(-8px);
+}
+}
+
+@keyframes glow-red {
+50% {
+    border-color: indianred;
+}
+}
