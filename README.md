@@ -1,6 +1,6 @@
 # HealthAxon
 
-![HealthAxon Logo](logo.png)
+![HealthAxon Logo](public/assets/logo.png)
 
 HealthAxon is an innovative web-based healthcare application that harnesses the power of artificial intelligence to provide predictive modeling for various health-related outcomes. With user signup and login functionality, HealthAxon offers personalized experiences while ensuring the security of user data. This detailed README will guide you through the setup process, features, and contribution guidelines for HealthAxon.
 
