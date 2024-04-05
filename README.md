@@ -2,6 +2,7 @@
 
 ![HealthAxon Logo](public/assets/logo.png)
 
+
 HealthAxon is an innovative web-based healthcare application that harnesses the power of artificial intelligence to provide predictive modeling for various health-related outcomes. With user signup and login functionality, HealthAxon offers personalized experiences while ensuring the security of user data. This detailed README will guide you through the setup process, features, and contribution guidelines for HealthAxon.
 
 ## Features
@@ -29,9 +30,22 @@ To start using HealthAxon, follow these steps:
    npm install
    ```
 
-3. **Set Up Database:** Configure the database settings according to your preferences. HealthAxon supports various databases like MySQL, MongoDB, etc. Ensure the database connection is established correctly.
+3. **Set Up Firebase:** 
+   - Create a Firebase project at [Firebase Console](https://console.firebase.google.com/).
+   - Enable Firebase Authentication and set up your preferred authentication method (e.g., email/password).
+   - Set up Firebase Realtime Database or Firestore according to your requirements.
+   - Copy your Firebase configuration settings.
+   - In your HealthAxon project, create a `.env` file in the root directory and add your Firebase configuration settings:
+     ```
+     REACT_APP_FIREBASE_API_KEY=your_api_key
+     REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
+     REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+     REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+     REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+     REACT_APP_FIREBASE_APP_ID=your_app_id
+     ```
 
-4. **Start the Application:** Once dependencies are installed and the database is set up, start the application:
+4. **Start the Application:** Once dependencies are installed and Firebase is set up, start the application:
    ```
    npm start
    ```
@@ -53,8 +67,5 @@ We welcome contributions from the community to enhance HealthAxon further. If yo
 
 For any questions, issues, or suggestions regarding HealthAxon, feel free to contact us at mayanktalan98@gmail.com. We're here to assist you and make your experience with the platform as smooth as possible.
 
-## License
 
-HealthAxon is licensed under the MIT License. See the `LICENSE` file for more details.
 
----
