@@ -1,7 +1,7 @@
 # HealthAxon
 
 <div style="text-align:center;">
-    <img src="lpublic/assets/logo.png" alt="HealthAxon Logo">
+    <img src="public/assets/logo.png" alt="HealthAxon Logo">
 </div>
 
 
